@@ -1,0 +1,23 @@
+ <div style='width:100%; margin-top:280px'>
+<h1 class='text-center mt-50 py-5' style='margin-top:590px; color:blue'>What we can offer you</h1>
+       <div class='row'>
+      
+         {% for company in company %}
+       <div class='col sm-12 mb-4 mt-24'>
+        <h4>{{company['project']}}</h4> 
+         <p>{{company['status']}}</p>
+         <p>{{company['location']}}</p>
+         
+         <div class='col sm-5 mb-20' style='margin-top:-20px; margin-bottom:20px; margin-top:-50px'>
+            <a href="mailto:isaacookyere4@gmail.com?subject=Application%20for%20{{company['project']}}&body=My%20name%3A%20%3Cyour%20name%20here%3E%0D%0A%0D%0AMy%20Resume%20link%3A%20%3Cresume%20link%3E%0D%0A%0D%0AMy%20LinkedIn%20link%3A%20%3Clinkedin%20in%3E%0D%0A%0D%0A" class='btn btn-primary' type="text" style='margin-left:80%; width:30px '>apply<a> 
+            
+        </div>
+        <hr>
+         
+        {% endfor %}
+         </div>
+        
+       
+              
+         
+        </div>
