@@ -20,8 +20,16 @@ def hello_isaac():
 @app.route("/header.html")
 def head():
     return render_template('header.html')
-@app.route("/header.html")
+@app.route("/footer.html")
 def foot():
-    return render_template('header.html')
+    return render_template('footer.html')
+
+@app.route("/business.html")
+def business():
+    return render_template('business.html')
+
+@app.route("/gold.html")
+def gold():
+    return render_template('gold.html')
 if __name__ =='__main__':
     app.run(host='0.0.0.0', debug=True)

@@ -547,6 +547,11 @@ letter-spacing: -0.18px;
 }
 
 }
+
+@media screen and (max-width:500px)
+{
+    
+}
  
 
 
@@ -669,8 +674,13 @@ letter-spacing: -0.18px;
        {% include 'footer.html'%}
        <hr>
                    <h2 class='text-center'style='margin-top:2px;margin-left:20px; font-family:Epilogue; color:#000065 '>GOLD TRADING CENTER</h2>
+                   <p class='text-center'style='margin-top:2px;margin-left:20px; font-family:Epilogue; color:#000065 '>Home Of Gold Delivery</p>
 
-       
+       <div class='col'>
+        {% extends 'business.html'%}
+        {% include 'gold.html'%}
+        
+       </div>
          <!--
         <section class="abs">
             
